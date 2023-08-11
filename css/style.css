@@ -1,17 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;700;800;900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background:  #FFFFFF;
+
+
+body a{
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
 }
 
 .headers {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    padding: 5px;
     width: 1480px;
     margin: 0 auto;
 }
@@ -43,7 +47,7 @@ body{
 }
 
 .get-btn {
-
+   font-family: 'Inter', sans-serif;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -58,9 +62,6 @@ body{
     margin-right: 20px;
     background: #F15B4E;;
 }
-
-
-
 
 .toggle {
     display: none;
@@ -152,3 +153,147 @@ body{
 
 }
 /* ------------------------------------header end ------------------------------------------ */
+
+
+
+.banner{
+    background-color: #ECF2F8;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.banner-detils{
+    width: 960px;
+    padding-top: 70px;
+    margin: 0px auto;
+    text-align: center;
+}
+.banner-detils h1{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 62px;
+}
+
+.banner-detils p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #00263D;
+    line-height: 35px;
+}
+.threetext{
+   width: 433px;
+   margin: 0 auto;
+   display: flex;
+   gap: 10px;
+   text-align: center;
+}
+.threetext p{
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #00263D;
+    font-size: 48px;
+    line-height: 62px;
+}
+#text{
+    color: #F15B4E;
+}
+.banner-btn{
+    margin: 20px auto;
+    width: 268px;
+    height: 69px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.banner-img{
+    width: 1480px;
+    height: 507px;
+    margin: 0 auto;
+    display: grid;
+    margin-top: -80px;
+    grid-template-columns: auto auto auto auto auto auto;
+
+}
+.item3 {
+    grid-area:span 2 / span 2;
+  }
+  .item1 {
+    margin-left: -130px;
+  }
+  .item2 {
+    margin-left: -174px;
+    margin-top: 190px;
+  }
+  .item3{
+    width: 425px;
+    height: 425px;
+    display: flex;
+    justify-content: end;
+    margin-left: 110px;
+    margin-top: 60px;
+  }
+  .item4{
+    margin-left: -389px;
+    margin-top: 187px;
+  }
+  .item5{
+    margin-left: -344px;
+  }
+.jwalary_box{
+    width: 225px;
+    height: 225px;
+    background-color: white;
+    position: relative;
+    transform: translateX(180px) rotate(45deg);
+    
+}
+
+.jwalary_box img{
+    width:  225px;
+    height: 225px;
+    rotate: -45deg;
+    overflow: hidden;
+    opacity: 0.3;
+    transition: all 0.2s ease-in;
+}
+
+.jwalary_box img:hover{
+    opacity: 100%;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
