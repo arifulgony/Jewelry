@@ -13,3 +13,7 @@ let interval = setInterval(function() {
   index = (index + 1) % texts.length;
   document.getElementById("text").innerHTML = texts[index];
 }, 2000);
+
+// logo slider
+var copy = document.querySelector(".logos-slide").cloneNode(true);
+      document.querySelector(".logos").appendChild(copy);
