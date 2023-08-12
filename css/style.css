@@ -463,7 +463,47 @@ body a{
 
 
 
+/* --------------------------end----------------------------------- */
+.Product-Comparison-Chart{
+    width: 960px;
+    height: 1008px;
+    margin: 0 auto;
+}
+.product-title{
+    padding: 60px 0px;
+    text-align: center;
+}
+.product-title p{
+    color:  #F15B4E;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.56px;
+}
+.product-title h1{
+    color: #00263D;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 58px;
+    letter-spacing: 0.8px;
+}
+.product-title h1 samp{
+font-weight: 600;
+}
+.table-direction{
+    display: flex;
+    justify-content: end;
+}
 
+.direction{
+    /* clip-path: polygon(1% 44%, 80% 44%, 76% 32%, 100% 50%, 76% 69%, 80% 52%, 0 53%);
+    background: yellow; */
+    width: 280px;
+    margin-left: 50px;
+}
 
 
 
