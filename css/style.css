@@ -316,32 +316,28 @@ body a{
 
 
   /* -----------------------logo slider end ------------------------ */
-.jewelry-photography-main{
+
+.jewelry-photography {
     background: #F3F7FC;
     width: 100%;
     padding: 100px 0px;
     margin-top: 30px;
 }
-.jewelry-photography-main h1{
+
+.jewelry-photography h1{
     font-family: 'Inter', sans-serif;
     color: #00263D;
     text-align: center;
     font-weight: 300;
     line-height: 58px;
     font-size: 40px;
+    padding-bottom: 100px;
+   
 }
-.jewelry-photography-main h1  span{
+.jewelry-photography h1  span{
     font-weight: 500;
 }
-  .jewelry-photography{
-    display: flex;
-    gap: 2px;
-    margin: 100px 0px auto auto;
-    width: 1680px;
-    height: 852px;
-    background: #FFF;
-  }
-  .jewelry-photography-detais{
+.jewelry-photography-detais{
     width: 700px;
    
   }
@@ -368,7 +364,7 @@ body a{
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 28px; /* 175% */
+    line-height: 28px; 
     letter-spacing: 0.64px;
 }
 .jewelry-slider-details{
@@ -380,7 +376,7 @@ body a{
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    line-height: 28px; /* 140% */
+    line-height: 28px;
     letter-spacing: 0.6px;
     text-transform: uppercase;
 }
@@ -390,7 +386,7 @@ body a{
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px; /* 166.667% */
+    line-height: 20px;
     letter-spacing: 0.36px;
     text-transform: uppercase;
 }
@@ -404,63 +400,331 @@ body a{
     font-size: 12px;
     font-style: normal;
     font-weight: 600;
-    line-height: 20px; /* 166.667% */
+    line-height: 20px; 
     letter-spacing: 0.24px;
     text-transform: uppercase;
 }
 
-.jewelry-slider{
+.jewelry-photography-products {
+    background-color: white;
+    margin-left: 265px;
     display: flex;
-    gap: 50px;
+}
+
+
+.left-right-button {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    overflow-x: hidden;
+    gap: 25px;
 }
-.jewelry-slider ::-webkit-scrollbar{
-    width: 0;
+
+/* slider 2  */
+
+.productCard-container {
+    display: flex;
+    overflow: hidden;
 }
-.slider-card{
-    min-width: 459px;
-    max-height: 734px;
+
+.productCard {
+    display: flex;
+    transition: transform 0.5s;
+}
+
+.product-card {
+    margin: 58px 19px 60px 0;
     background: #FFF;
     box-shadow: 0px 2px 8px 0px #DDECF4;
 }
-.slider-details hr{
-    margin-top: 24px;
+
+.product-card img {
+    height: 460px;
 }
-.btn-container{
-    margin-top: 41px;
-    display: flex;
-    gap: 10px;
+
+.slide-details {
+    margin: 0;
+    padding: 25px 0 35px 49px;
+}
+
+.product-card-heading {
+    color: #F15B4E;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0 0 4px 0;
+}
+
+.product-card-description {
+    color: #00263D;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
 
 }
-.slider-btn{
-    background: transparent;
-    height: 40px;
-    padding: 5px 18px;
+
+.product-card-size {
+    opacity: 0.7;
+    color: #00263D;
+    font-family: Montserrat;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0 0 24px 0;
+
+}
+
+.product-card-size-heading {
+    color: #00263D;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
+.horizental-line {
+    width: 370px;
+    height: 1px;
+    opacity: 0.07;
+    background: #00263D;
+    margin: 0 0 43px 0;
+
+}
+
+.slide-box {
+    display: flex;
+    gap: 7px;
+}
+
+.slide-box p {
+    display: inline-flex;
+    padding: 4px 18px;
     align-items: flex-start;
     border-radius: 4px;
-    color: #00263D;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0.28px;
 }
-.btn-01{
+
+.slide-box .degree {
     border: 1px solid #9E88F2;
 }
-.btn-02{
+
+.slide-box .still {
     border: 1px solid #5BD1CA;
 }
 
-.btn-03{
+.slide-box .version {
     border: 1px solid #98B8F6;
+    ;
 }
-.btn-04{
+
+.slide-box .video {
     border: 1px solid #FBBFB2;
 }
 
+.finished-jewelry {
+    display: none;
+}
 
+.loose-stones {
+    display: none;
+}
+
+.productCard-button {
+    cursor: pointer;
+}
+
+.pagination {
+    display: none;
+}
+
+/* accessories */
+.accessories {
+    display: none;
+}
+
+/* Responsive styles for mobile */
+@media screen and (max-width: 767px) {
+
+    /* navbar  */
+    .logo {
+        padding: 10px 0 10px 16px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 100px;
+        width: 100%;
+    }
+
+    .desktop-view {
+        display: none;
+    }
+
+    .nav-links a {
+        padding: 10px 20px;
+    }
+
+    .show-nav {
+        display: flex;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    .mobile-icon {
+        display: block;
+    }
+
+
+    /* slide  */
+    .slider-container {
+        width: 100%;
+        margin: 8px 0 10px 0;
+    }
+
+    .slide {
+        flex: 0 0 28.57%;
+    } */
+
+    /* jewelry-photography  */
+
+    .jewelry-photography-products {
+        background-color: white;
+        margin-left: 0px;
+        display: block;
+    }
+
+    .jewelry-photography-2nd-heading {
+        width: 320px;
+        padding: 36px 0 49px 40px;
+    }
+
+    .jewelry-photography-2nd-description {
+        font-size: 14px;
+        line-height: 25px;
+        letter-spacing: 0.56px;
+        padding-top: 38px;
+    }
+
+    .left-right-button {
+        display: none;
+    }
+
+    /* slider 2  */
+
+    .productCard-container {
+        display: flex;
+        overflow: hidden;
+    }
+
+    .productCard {
+        display: flex;
+        transition: transform 0.5s ease-out;
+    }
+
+    .product-card {
+        width: 259px;
+        margin: 0 9px 33px 8px;
+        background: #FFF;
+        box-shadow: 0px 2px 8px 0px #DDECF4;
+    }
+
+    .product-card img {
+        height: 268px;
+    }
+
+    .slide-details {
+        margin: 0;
+        padding: 14px 0 22px 27px;
+    }
+
+    .product-card-heading {
+        font-size: 14px;
+        margin: 0 0 2px 0;
+    }
+
+    .product-card-description {
+        font-size: 10px;
+        margin: 0 0 11px 0;
+
+    }
+
+    .product-card-size {
+        font-size: 9px;
+        margin: 0 0 20px 0;
+    }
+
+    .product-card-size-heading {
+        font-size: 9px;
+    }
+
+    .horizental-line {
+        width: 209px;
+        height: 1px;
+        margin: 0 0 21px 0;
+
+    }
+
+    .slide-box {
+        display: flex;
+        gap: 4px;
+    }
+
+    .slide-box p {
+        display: inline-flex;
+        padding: 2px 11px;
+        align-items: flex-start;
+        border-radius: 4px;
+    }
+
+    .finished-jewelry {
+        display: inline-flex;
+        padding: 2px 11px;
+        align-items: flex-start;
+        border-radius: 4px;
+        margin: 0;
+        border: 1px solid #5BD1CA;
+
+    }
+
+    .loose-stones {
+        display: inline-flex;
+        padding: 2px 11px;
+        align-items: flex-start;
+        border-radius: 4px;
+        margin: 0;
+        border: 1px solid #5BD1CA;
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .pagination-dot {
+        width: 100%;
+        height: 10px;
+        background-color: gray;
+        cursor: pointer;
+    }
+
+    .pagination-dot.active {
+        background-color: #F15B4E;
+    }
+
+    footer p {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 12px;
+    }
+}
 
 
 /* --------------------------end----------------------------------- */
@@ -595,6 +859,171 @@ font-weight: 600;
 }
 
 
+/* ---------------------table end----------------------------- */
+
+.main_testimonials {
+    display: flex;
+}
+
+.testimonials {
+    height: 1090px;
+
+}
+
+.testimonials_bg img {
+    position: absolute;
+}
+
+.testimonials_photo img {
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    position: relative;
+    margin-left: 465px;
+    margin-top: 280px;
+    opacity: 0.5;
+}
+
+
+.testimonials_photo_active {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+    margin-left: 570px;
+    margin-top: 118px;
+    position: relative;
+}
+
+.testimonials_photo_active img {
+    border-radius: 50%;
+
+}
+
+.testimonials_photo2 img {
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    position: relative;
+    margin-left: 445px;
+    margin-top: 130px;
+    opacity: 0.5;
+}
+
+.active-point {
+    margin-left: 100px;
+    margin-top: 250px;
+    height: 600px;
+    width: 1px;
+    background: #ddd;
+
+}
+
+.point {
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background: #DDD;
+}
+
+.point-middle {
+    background: red;
+    margin: 285px auto;
+}
+
+.review {
+    height: 1200px;
+    display: flex;
+    align-items: center;
+}
+
+.review p {
+    width: 250px;
+    margin-left: 200px;
+}
+/* -------------------------------testimonial end---------------------------------- */
+.customers-say {
+    background: #F3F7FC;
+    margin: 100px auto; 
+}
+
+.customers-say-heading {
+    color: #00263D;
+    text-align: center;
+    padding-top: 71px;
+    padding-bottom: 61px;
+    font-size: 46px;
+    font-weight: 800;
+    font-family: 'Open Sans';
+    margin: 0;
+}
+
+.customers-style {
+    display: flex;
+    gap: 38px;
+    width: 60%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.customers {
+    width: 505px;
+    height: 216px;
+    border-radius: 24px;
+    background: #CCF2DD;
+    text-align: center;
+    margin-bottom: 109px;
+}
+
+
+.customers img {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.customers-details {
+    width: 378px;
+    margin: auto;
+    padding-left: 63px;
+    padding-right: 64px
+}
+
+.customers h5 {
+    color: #005451;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.customers p {
+    color: #005451;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    margin: 0;
+    padding-top: 5px;
+}
+
+/* footer */
+footer {
+    background: #00263D;
+}
+
+footer p {
+    text-align: center;
+    padding-top: 51px;
+    padding-bottom: 50px;
+    color: #FFF;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    font-weight: 500;
+    margin: 0;
+}
 
 
 
