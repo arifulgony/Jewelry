@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jewelry</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -25,10 +27,9 @@
                 <span></span>
                 <span></span>
             </div>
-           
         </div>
        </header>
-       <!-- --------------header end------------------- -->
+ <!-- --------------header end------------------- -->
        <main>
         <section>
             <div class="banner">
@@ -43,7 +44,6 @@
                             <br> hassle-free</strong> Jewelry photography solutions.</p>
                     <button class="get-btn banner-btn">get in touch <img src="./img/icone/direktion.png" alt="img"></button>
                 </div>
-                <!-- box 01  -->
               <div class="banner-img">
                 <div class="jwalary_box item1"><img src="./img/ring01.png" alt="diamond"></div>
                 <div class="jwalary_box item2"><img src="./img/dymon.png" alt="diamond"></div>
@@ -63,9 +63,8 @@
                     <img src="/img/logo/touaneau.png" alt="">
                     <img src="/img/logo/swatch.png" alt="">
             </div>
-            
         </section>
-         <!-- Jewelry Photography Section  -->
+ <!-- Jewelry Photography Section  -->
     <div class="jewelry-photography">
            <h1> Jewelry Photography <br> <span>Solutions and Products</span></h1>
         <div class="jewelry-photography-products">
@@ -100,7 +99,6 @@
                     <p class="version">3D</p>
                     <p class="video">Video</p>
                   </div>
-  
                   <p class="finished-jewelry">Finished Jewelry</p>
                 </div>
               </div>
@@ -145,7 +143,6 @@
               </div>
             </div>
           </div>
-  
           <!-- mobile view  -->
           <div class="pagination">
             <div class="pagination-dot active" onclick="goToSlide(0)"></div>
@@ -153,7 +150,6 @@
             <div class="pagination-dot" onclick="goToSlide(2)"></div>
           </div>
           <div>
-  
           </div>
         </div>
       </div>
@@ -209,7 +205,6 @@
               </div>
             </div>
           </div>
-  
           <!-- mobile view  -->
           <div class="pagination ">
             <div class="pagination-dot pagination-dot-accessories active" onclick="goToAccessoriesSlide(0)"></div>
@@ -220,7 +215,7 @@
           </div>
         </div>
       </div>
-        <!-- ------------------------slider card end------------------- -->
+  <!-- ------------------------slider card end------------------- -->
         <section>
             <div class="Product-Comparison-Chart">
                 <div class="product-title">
@@ -229,47 +224,47 @@
                     Features & Specifications</h1>
                 </div>
                 <div class="table-direction">
-                    <div class="direction">
+                    <div class="direction" onclick="tableDataleft()">
                         <svg xmlns="http://www.w3.org/2000/svg" width="281" height="8" viewBox="0 0 281 8" fill="none">
                             <path d="M0.646447 3.64645C0.451184 3.84171 0.451184 4.15829 0.646447 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646447 3.64645ZM1 4.5H281V3.5H1V4.5Z" fill="#00263D" fill-opacity="0.3"/>
                           </svg>
                     </div>
-                    <div class="direction">
+                    <div class="direction" onclick="tableData()">
                         <p>PhotoBench Air</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="281" height="8" viewBox="0 0 281 8" fill="none">
+                        <svg xmlns="http://www.w3.org/2000/svg"  width="281" height="8" viewBox="0 0 281 8" fill="none">
                         <path d="M280.354 4.35355C280.549 4.15829 280.549 3.84171 280.354 3.64645L277.172 0.464466C276.976 0.269204 276.66 0.269204 276.464 0.464466C276.269 0.659728 276.269 0.976311 276.464 1.17157L279.293 4L276.464 6.82843C276.269 7.02369 276.269 7.34027 276.464 7.53553C276.66 7.7308 276.976 7.7308 277.172 7.53553L280.354 4.35355ZM0 4.5L280 4.5V3.5L0 3.5L0 4.5Z" fill="#F15B4E"/>
                       </svg></div>
                 </div>
-                <table>
+                <table id="info">
                    <tr>
                     <td class="ferure-hading"><p>Features</p></td>
                     <td class="table-heding"><h3>PhotoBench 100</h3> <p>Jewelry Photography Light Box and Software</p></td>
                     <td class="table-heding"><h3>PhotoBench 80</h3> <p>Jewelry Photography Solution – Still, 360, 3D and Video</p></td>
-                    <td class="table-heding"><h3>PhotoBench 80 Air</h3><p>All in One Jewelry, Loose Diamond and Gemstone Photography System – Still, 360, 3D and Video</p></td>
+                    <td class="table-heding d-none"><h3>PhotoBench 80 Air</h3><p>All in One Jewelry, Loose Diamond and Gemstone Photography System – Still, 360, 3D and Video</p></td>
                    </tr>
                    <tr>
                     <td class="table-feature"><p>Software Controlled Camera, Light and Turntable Settings</p></td>
                     <td class="table-img"><img src="./img/icone/tikmark.png" alt=""></td>
                     <td class="table-img"><img src="./img/icone/tikmark.png" alt=""></td>
-                    <td class="table-img"><img src="./img/icone/tikmark.png" alt=""></td>
+                    <td class="table-img d-none"><img src="./img/icone/tikmark.png" alt=""></td>
                    </tr>
                    <tr>
                     <td class="table-feature"><p>Multiple Camera Control</p></td>
                     <td class="table-img"><img src="./img/icone/tikmark.png" alt=""></td>
                     <td class="table-img"><img src="./img/icone/tikmark.png" alt=""></td>
-                    <td class="table-img"><img src="./img/icone/tikmark.png" alt=""></td>
+                    <td class="table-img d-none"><img src="./img/icone/tikmark.png" alt=""></td>
                    </tr>
                    <tr>
                     <td class="table-feature"><p>Real Time Preview</p></td>
                     <td class="table-img"><img src="./img/icone/tikmark.png" alt=""></td>
                     <td class="table-img"><img src="./img/icone/tikmark.png" alt=""></td>
-                    <td class="table-img"><img src="./img/icone/tikmark.png" alt=""></td>
+                    <td class="table-img d-none"><img src="./img/icone/tikmark.png" alt=""></td>
                    </tr>
                    <tr>
                     <td class="table-feature"><p>Batch Editing, Processing & Saving</p></td>
                     <td class="table-img"><img src="./img/icone/tikmark.png" alt=""></td>
                     <td class="table-img"><img src="./img/icone/tikmark.png" alt=""></td>
-                    <td class="table-img"><img src="./img/icone/tikmark.png" alt=""></td>
+                    <td class="table-img d-none"><img src="./img/icone/tikmark.png" alt=""></td>
                    </tr>
                    <tr>
                     <td class="table-feature"><p>Batch Editing, Processing & Saving</p></td>
@@ -281,58 +276,97 @@
                         50,000 hour lifespan
                         95+ CRI
                         11,400 Lumens</p></td>
-                    <td class="feature-data"><p>Dimmable LEDs
+                    <td class="feature-data d-none"><p>Dimmable LEDs
                         50,000 hour lifespan
                         95+ CRI
                         11,400 Lumens</p></td>
+                   </tr>
+                   <tr id="tableData">
+
                    </tr>
                 </table>
-            </div>
-        </section>
-        <!----------------------------table end---------------------->
-        <section>
-            <div class="main_testimonials">
-                <div class="testimonials">
-                    <div class="testimonials_bg">
-                        <img src="./img/logo/cercel.png" alt="">
-                    </div>
-                    <div class="testimonials_photo">
-                        <img src="./img/mane02.png" alt="img">
-                    </div>
-                    <div class="testimonials_photo_active">
-                        <img src="./img/mane01.png" alt="img">
-                        <div>
-                            <h6>fggfgdf</h6>
-                            <p>dsfgsdf</p>
-                            <p>dsfgsdf</p>
-                        </div>
-                    </div>
-                    <div class="testimonials_photo2">
-                        <img src="./img/womane.png" alt="img">
-                    </div>
-                </div>
-               
-                    <div class="active-point">
-                    <div class="point"></div>
-                    <div class="point point-middle"></div>
-                    <div class="point"></div>
-                    </div>
-               
-                
-                <div class="review">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, repudiandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate illum quo non odio dolorum ex quasi in aliquam possimus expedita.</p>
-    
+                <div class="table_button">
+                  <button onclick="tablerowData()">Expand to See More</button>
                 </div>
             </div>
-            
         </section>
-        <!-- ------------------------------testimonial end----------------------------------  -->
+<!----------------------------table end---------------------->
+        <section class="testimoniam-main">
+          <div class="Testimonials-detils">
+           <p class="test-text">Testimonials</p>
+           <h1><samp>Trusted</samp> Expertise, Unrivalled Support</h1>
+           <article>Choose Ortery and you don’t just get industry-leading equipment underpinned by innovative software, you get the knowledge we’ve gained over two decades as market leaders in product photography. We support our customers with unequalied training and support for the entire lifecycle of their product. <strong>Here’s why our customers return to us time after time:</strong></article>
+          </div>
+          <div  id="person">
+           <div class="testimoniam">
+               <img  class="d-none" src="./img/logo/cercel.png" alt="img">
+           </div>
+           <div class="person">
+               <div class="person-image">
+                   <div class="person-slider">
+                       <div class="person-item">
+                           <img src="./img/mane01.png" alt="">
+                           <div class="person-details">
+                               <h2>Roland Weedon</h2>
+                               <p>CEO & Founder, Essex Mortgage</p>
+                           </div>
+                       </div>
+                       <div class="person-item">
+                           <img src="./img/mane02.png" alt="">
+                           <div class="person-details">
+                               <h2>Roland Weedon</h2>
+                               <p>CEO & Founder, Essex Mortgage</p>
+   
+                           </div>
+                       </div>
+                       <div class="person-item">
+                           <img src="./img/womane.png" alt="">
+                           <div class="person-details">
+                               <h2>Roland Weedon</h2>
+                             <p>CEO & Founder, Essex Mortgage</p>
+                           </div>
+                       </div>
+                       <div class="person-item">
+                           <img src="./img/mane02.png" alt="">
+                       <div class="person-details">
+                           <h2>Roland Weedon</h2>
+                           <p>CEO & Founder, Essex Mortgage</p>
+                       </div>
+                       </div>
+                   </div>
+               </div>
+               <div class="person-text">
+                   <div class="text-slider">
+                       <div class="text-item">
+                           <img src="./img/icone/semiclone.png" alt="">
+                           <p>I would recommend ortery product photography for anyone trying to get the word out about their business. It has saved me so much time!</p>
+                       </div>
+                       <div class="text-item">
+                           <img src="./img/icone/semiclone.png" alt="">
+                           <p>I would recommend ortery product photography for anyone trying to get the word out about their business. It has saved me so much time!</p>
+                       </div>
+                       <div class="text-item">
+                           <img src="./img/icone/semiclone.png" alt="">
+   
+                           <p>I would recommend ortery product photography for anyone trying to get the word out about their business. It has saved me so much time!</p>
+                       </div>
+                       <div class="text-item">
+                           <img src="./img/icone/semiclone.png" alt="">
+                           <p>I would recommend ortery product photography for anyone trying to get the word out about their business. It has saved me so much time!</p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+          </div>
+       </section>
+ <!-- ------------------------------testimonial end----------------------------------  -->
 
         <section>
             <div class="customers-say">
-                <h2 class="customers-say-heading">Our Customers Say</h2>
+                <h2 class="customers-say-heading">Our 
+                  Customers 
+                  Are Saying</h2>
                 <div class="customers-style">
-          
                   <div class="customers">
                     <img src="./img/icone/stars.png" alt="">
                     <div class="customers-details">
@@ -364,9 +398,9 @@
        <footer>
         <p>Copyright © 2023 YXZ</p>
        </footer>
-
-
-
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+       <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+       <script src="./js/slider.js"></script>
        <script src="./js/main.js"></script>
     
 </body>
