@@ -1391,7 +1391,7 @@ footer p {
 
 
     /* -------------------------------------leptop device -------------------------------- */
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
     .headers {
         justify-content: space-between;
         padding: 10px;
@@ -1409,7 +1409,7 @@ footer p {
         margin: 0 auto;
     }
 
-}
+} */
 
 @media (max-width: 1899px){
     main{
